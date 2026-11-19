@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Full Window",
+  "version": "1.0.0",
+  "description": "Adds a button to the YouTube player that fills the whole browser window with the video and its controls (like Twitch theatre mode). Local dev install only.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
